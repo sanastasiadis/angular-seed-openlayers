@@ -1,7 +1,7 @@
 import { join } from 'path';
 
 import { SeedConfig } from './seed.config';
-// import { ExtendPackages } from './seed.config.interfaces';
+import { ExtendPackages } from './seed.config.interfaces';
 
 /**
  * This class extends the basic seed configuration, allowing for project specific overrides. A few examples can be found
@@ -50,6 +50,74 @@ export class ProjectConfig extends SeedConfig {
     // }];
     //
     // this.addPackagesBundles(additionalPackages);
+
+    let additionalPackages: ExtendPackages[] = [
+      {
+          name: 'angular2-openlayers',
+          path: 'node_modules/angular2-openlayers/dist/index.js'
+      },
+      {
+          name: 'angular2-openlayers/dist/components',
+          path: 'node_modules/angular2-openlayers/dist/components',
+          packageMeta: {
+              main: './index.js',
+              defaultExtension: 'js'
+          }
+      },
+      {
+          name: 'angular2-openlayers/dist/components/controls',
+          path: 'node_modules/angular2-openlayers/dist/components/controls',
+          packageMeta: {
+              main: './index.js',
+              defaultExtension: 'js'
+          }
+      },
+      {
+          name: 'angular2-openlayers/dist/components/formats',
+          path: 'node_modules/angular2-openlayers/dist/components/formats',
+          packageMeta: {
+              main: './index.js',
+              defaultExtension: 'js'
+          }
+      },
+      {
+          name: 'angular2-openlayers/dist/components/interactions',
+          path: 'node_modules/angular2-openlayers/dist/components/interactions',
+          packageMeta: {
+              main: './index.js',
+              defaultExtension: 'js'
+          }
+      },
+      {
+          name: 'angular2-openlayers/dist/components/layers',
+          path: 'node_modules/angular2-openlayers/dist/components/layers',
+          packageMeta: {
+              main: './index.js',
+              defaultExtension: 'js'
+          }
+      },
+      {
+          name: 'angular2-openlayers/dist/components/sources',
+          path: 'node_modules/angular2-openlayers/dist/components/sources',
+          packageMeta: {
+              main: './index.js',
+              defaultExtension: 'js'
+          }
+      },
+      {
+          name: 'angular2-openlayers/dist/components/styles',
+          path: 'node_modules/angular2-openlayers/dist/components/styles',
+          packageMeta: {
+              main: './index.js',
+              defaultExtension: 'js'
+          }
+      },
+      {
+          name: 'openlayers',
+          path: 'node_modules/openlayers/dist/ol.js'
+      }
+    ];
+    this.addPackagesBundles(additionalPackages);
 
     /* Add proxy middleware */
     // this.PROXY_MIDDLEWARE = [
