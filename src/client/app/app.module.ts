@@ -9,8 +9,10 @@ import { AboutModule } from './about/about.module';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
 
+import { AngularOpenlayersModule } from 'angular2-openlayers';
+
 @NgModule({
-  imports: [BrowserModule, HttpModule, AppRoutingModule, AboutModule, HomeModule, SharedModule.forRoot()],
+  imports: [BrowserModule, HttpModule, AppRoutingModule, AboutModule, HomeModule, SharedModule.forRoot(), AngularOpenlayersModule],
   declarations: [AppComponent],
   providers: [{
     provide: APP_BASE_HREF,
