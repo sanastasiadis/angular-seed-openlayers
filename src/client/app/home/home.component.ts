@@ -12,6 +12,11 @@ import { NameListService } from '../shared/name-list/name-list.service';
 })
 export class HomeComponent implements OnInit {
 
+  public srid: string = 'EPSG:4326';
+  public viewCalculatedZoom = 4;
+  public viewCalculatedX = 5.795122;
+  public viewCalculatedY = 45.210225;
+
   newName: string = '';
   errorMessage: string;
   names: any[] = [];

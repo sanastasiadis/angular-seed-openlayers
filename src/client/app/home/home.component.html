@@ -8,3 +8,15 @@
 <ul>
   <li *ngFor="let name of names">{{ name }}</li>
 </ul>
+
+<aol-map #mapComponent [width]="'1000px'" [height]="'600px'">
+  <aol-interaction-default></aol-interaction-default>
+  <aol-view #viewComponent [zoom]="viewCalculatedZoom">
+      <aol-coordinate [x]="viewCalculatedX" [y]="viewCalculatedY" [srid]="srid"></aol-coordinate>
+  </aol-view>
+  <aol-layer-tile>
+      <aol-source-osm></aol-source-osm>
+      <!--aol-source-tilewms [url]="url" [params]="params" [projection]="srid"></aol-source-tilewms-->
+      <!--aol-source-xyz [url]="xyzurl" [projection]="srid"></aol-source-xyz-->
+  </aol-layer-tile>
+</aol-map>
