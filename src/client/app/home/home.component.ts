@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NameListService } from '../shared/name-list/name-list.service';
 
-import { MapComponent, ViewComponent } from 'angular2-openlayers';
+import { MapComponent, ViewComponent } from 'ngx-openlayers';
 
 /**
  * This class represents the lazy loaded HomeComponent.
@@ -13,11 +13,6 @@ import { MapComponent, ViewComponent } from 'angular2-openlayers';
   styleUrls: ['home.component.css'],
 })
 export class HomeComponent implements OnInit {
-
-  public srid: string = 'EPSG:4326';
-  public viewCalculatedZoom = 4;
-  public viewCalculatedX = 5.795122;
-  public viewCalculatedY = 45.210225;
 
   newName: string = '';
   errorMessage: string;

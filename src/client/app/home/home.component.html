@@ -9,14 +9,11 @@
   <li *ngFor="let name of names">{{ name }}</li>
 </ul>
 
-<aol-map #mapComponent [width]="'1000px'" [height]="'600px'">
-  <aol-interaction-default></aol-interaction-default>
-  <aol-view #viewComponent [zoom]="viewCalculatedZoom">
-      <aol-coordinate [x]="viewCalculatedX" [y]="viewCalculatedY" [srid]="srid"></aol-coordinate>
+<aol-map [width]="'500px'" [height]="'300'">
+  <aol-view [zoom]="2">
+      <aol-coordinate [x]="5.795122" [y]="45.210225" [srid]="'EPSG:4326'"></aol-coordinate>
   </aol-view>
   <aol-layer-tile>
       <aol-source-osm></aol-source-osm>
-      <!--aol-source-tilewms [url]="url" [params]="params" [projection]="srid"></aol-source-tilewms-->
-      <!--aol-source-xyz [url]="xyzurl" [projection]="srid"></aol-source-xyz-->
   </aol-layer-tile>
 </aol-map>

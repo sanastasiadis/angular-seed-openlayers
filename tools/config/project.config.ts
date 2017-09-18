@@ -53,60 +53,60 @@ export class ProjectConfig extends SeedConfig {
 
     let additionalPackages: ExtendPackages[] = [
       {
-          name: 'angular2-openlayers',
-          path: 'node_modules/angular2-openlayers/dist/index.js'
+          name: 'ngx-openlayers',
+          path: 'node_modules/ngx-openlayers/dist/index.js'
       },
       {
-          name: 'angular2-openlayers/dist/components',
-          path: 'node_modules/angular2-openlayers/dist/components',
+          name: 'ngx-openlayers/dist/components',
+          path: 'node_modules/ngx-openlayers/dist/components',
           packageMeta: {
               main: './index.js',
               defaultExtension: 'js'
           }
       },
       {
-          name: 'angular2-openlayers/dist/components/controls',
-          path: 'node_modules/angular2-openlayers/dist/components/controls',
+          name: 'ngx-openlayers/dist/components/controls',
+          path: 'node_modules/ngx-openlayers/dist/components/controls',
           packageMeta: {
               main: './index.js',
               defaultExtension: 'js'
           }
       },
       {
-          name: 'angular2-openlayers/dist/components/formats',
-          path: 'node_modules/angular2-openlayers/dist/components/formats',
+          name: 'ngx-openlayers/dist/components/formats',
+          path: 'node_modules/ngx-openlayers/dist/components/formats',
           packageMeta: {
               main: './index.js',
               defaultExtension: 'js'
           }
       },
       {
-          name: 'angular2-openlayers/dist/components/interactions',
-          path: 'node_modules/angular2-openlayers/dist/components/interactions',
+          name: 'ngx-openlayers/dist/components/interactions',
+          path: 'node_modules/ngx-openlayers/dist/components/interactions',
           packageMeta: {
               main: './index.js',
               defaultExtension: 'js'
           }
       },
       {
-          name: 'angular2-openlayers/dist/components/layers',
-          path: 'node_modules/angular2-openlayers/dist/components/layers',
+          name: 'ngx-openlayers/dist/components/layers',
+          path: 'node_modules/ngx-openlayers/dist/components/layers',
           packageMeta: {
               main: './index.js',
               defaultExtension: 'js'
           }
       },
       {
-          name: 'angular2-openlayers/dist/components/sources',
-          path: 'node_modules/angular2-openlayers/dist/components/sources',
+          name: 'ngx-openlayers/dist/components/sources',
+          path: 'node_modules/ngx-openlayers/dist/components/sources',
           packageMeta: {
               main: './index.js',
               defaultExtension: 'js'
           }
       },
       {
-          name: 'angular2-openlayers/dist/components/styles',
-          path: 'node_modules/angular2-openlayers/dist/components/styles',
+          name: 'ngx-openlayers/dist/components/styles',
+          path: 'node_modules/ngx-openlayers/dist/components/styles',
           packageMeta: {
               main: './index.js',
               defaultExtension: 'js'
