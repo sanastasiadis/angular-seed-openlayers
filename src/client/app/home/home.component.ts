@@ -3,6 +3,15 @@ import { NameListService } from '../shared/name-list/name-list.service';
 
 import { MapComponent, ViewComponent } from 'ngx-openlayers';
 
+import 'ngx-openlayers';
+import 'ngx-openlayers/dist/components';
+import 'ngx-openlayers/dist/components/controls';
+import 'ngx-openlayers/dist/components/formats';
+import 'ngx-openlayers/dist/components/interactions';
+import 'ngx-openlayers/dist/components/layers';
+import 'ngx-openlayers/dist/components/sources';
+import 'ngx-openlayers/dist/components/styles';
+
 /**
  * This class represents the lazy loaded HomeComponent.
  */
