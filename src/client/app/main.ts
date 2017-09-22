@@ -33,3 +33,26 @@ if (String('<%= BUILD_TYPE %>') === 'prod') { enableProdMode(); }
 //     .catch((err: any) =>
 //       console.log('ServiceWorker registration failed: ', err));
 // }
+
+var Module = require('ngx-openlayers');
+var originalRequire = Module.prototype.require;
+
+Module.prototype.require = function(){
+  //do your thing here
+  if (arguments[0] === './components'
+    || arguments[0] === './controls'
+    || arguments[0] === './formats'
+    || arguments[0] === './interactions'
+    || arguments[0] === './layers'
+    || arguments[0] === './sources'
+    || arguments[0] === './styles'
+    || arguments[0] === '../controls'
+    || arguments[0] === '../formats'
+    || arguments[0] === '../interactions'
+    || arguments[0] === '../layers'
+    || arguments[0] === '../sources'
+    || arguments[0] === '../styles') {
+      arguments[0] = arguments[0]+'/index.js';
+  }
+  return originalRequire.apply(this, arguments);
+};
