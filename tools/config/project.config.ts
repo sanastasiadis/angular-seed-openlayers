@@ -24,7 +24,14 @@ export class ProjectConfig extends SeedConfig {
       ...this.NPM_DEPENDENCIES,
       // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
-      {src: 'ngx-openlayers/dist/index.js', inject: 'libs'}
+      {src: 'ngx-openlayers/dist/index.js', inject: 'libs'},
+      {src: 'ngx-openlayers/dist/components/index.js', inject: 'libs'},
+      {src: 'ngx-openlayers/dist/components/controls/index.js', inject: 'libs'},
+      {src: 'ngx-openlayers/dist/components/formats/index.js', inject: 'libs'},
+      {src: 'ngx-openlayers/dist/components/interactions/index.js', inject: 'libs'},
+      {src: 'ngx-openlayers/dist/components/layers/index.js', inject: 'libs'},
+      {src: 'ngx-openlayers/dist/components/sources/index.js', inject: 'libs'},
+      {src: 'ngx-openlayers/dist/components/styles/index.js', inject: 'libs'},
     ];
 
     // Add `local` third-party libraries to be injected/bundled.
