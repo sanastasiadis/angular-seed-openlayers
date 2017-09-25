@@ -62,62 +62,18 @@ export class ProjectConfig extends SeedConfig {
     let additionalPackages: ExtendPackages[] = [
       {
           name: 'ngx-openlayers',
-          path: 'node_modules/ngx-openlayers/dist/index.js'
-      },
-      {
-          name: 'ngx-openlayers/dist/components',
-          path: 'node_modules/ngx-openlayers/dist/components',
+          path: 'node_modules/ngx-openlayers',
           packageMeta: {
-              main: './index.js',
-              defaultExtension: 'js'
-          }
-      },
-      {
-          name: 'ngx-openlayers/dist/components/controls',
-          path: 'node_modules/ngx-openlayers/dist/components/controls',
-          packageMeta: {
-              main: './index.js',
-              defaultExtension: 'js'
-          }
-      },
-      {
-          name: 'ngx-openlayers/dist/components/formats',
-          path: 'node_modules/ngx-openlayers/dist/components/formats',
-          packageMeta: {
-              main: './index.js',
-              defaultExtension: 'js'
-          }
-      },
-      {
-          name: 'ngx-openlayers/dist/components/interactions',
-          path: 'node_modules/ngx-openlayers/dist/components/interactions',
-          packageMeta: {
-              main: './index.js',
-              defaultExtension: 'js'
-          }
-      },
-      {
-          name: 'ngx-openlayers/dist/components/layers',
-          path: 'node_modules/ngx-openlayers/dist/components/layers',
-          packageMeta: {
-              main: './index.js',
-              defaultExtension: 'js'
-          }
-      },
-      {
-          name: 'ngx-openlayers/dist/components/sources',
-          path: 'node_modules/ngx-openlayers/dist/components/sources',
-          packageMeta: {
-              main: './index.js',
-              defaultExtension: 'js'
-          }
-      },
-      {
-          name: 'ngx-openlayers/dist/components/styles',
-          path: 'node_modules/ngx-openlayers/dist/components/styles',
-          packageMeta: {
-              main: './index.js',
-              defaultExtension: 'js'
+              main: 'dist/index.js',
+              map: {
+                  './dist/components': './dist/components/index.js',
+                  './dist/components/formats': './dist/components/formats/index.js',
+                  './dist/components/controls': './dist/components/controls/index.js',
+                  './dist/components/interactions': './dist/components/interactions/index.js',
+                  './dist/components/layers': './dist/components/layers/index.js',
+                  './dist/components/sources': './dist/components/sources/index.js',
+                  './dist/components/styles': './dist/components/styles/index.js'
+              }
           }
       },
       {
